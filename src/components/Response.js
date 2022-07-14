@@ -1,6 +1,6 @@
 import React from "react"
 import About from "./About"
-import feedback from "./feedback"
+import client from "./feedback"
 
 
 
@@ -8,7 +8,7 @@ import feedback from "./feedback"
 export default function Response() {
     
 
-    const clientResponse = feedback.map(response =>{
+    const clientResponse = client.map(response =>{
         return <About 
             id = {response.id}
             Image = {response.clientImage}

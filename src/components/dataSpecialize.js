@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         title: "UI/UX",
         text: "Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design"
@@ -24,3 +24,6 @@ export default [
         text: "JavaScript, CSS, JS"
     }
 ]
+
+
+export default data

@@ -1,4 +1,4 @@
-export default {
+const workData = {
     "success": true,
     "work" : [
         {
@@ -66,3 +66,6 @@ export default {
         }
     ]
 }
+
+
+export default workData

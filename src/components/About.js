@@ -4,9 +4,6 @@ import Twitter from "../icons/twitter.svg"
 import linkedin from "../icons/linkedins.svg"
 
 
-
-
-
 export default function About(props) {
 
      return (

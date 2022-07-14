@@ -1,6 +1,6 @@
 
 
-export default [
+const client = [
     {
         clientImage: "client-feedback1.jpg",
         clientName: "Mrs. Gbemisola Ogunlana",
@@ -9,3 +9,6 @@ export default [
         
     },
 ]
+
+
+export default client
