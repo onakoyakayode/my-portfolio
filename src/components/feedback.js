@@ -2,6 +2,7 @@
 
 const client = [
     {
+        id: 1,
         clientImage: "client-feedback1.jpg",
         clientName: "Gbemisola Ogunlana",
         clientRole: "Product Manager",

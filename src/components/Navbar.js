@@ -2,16 +2,18 @@ import React from "react"
 import navButton from "../icons/list.svg"
 
 export default function Navbar() {
-    const toggle = document.getElementById("nav--items");
-    function toggleButton() {
-        if (toggle.style.left === "-100%") {
-            toggle.style.left = "0%"
-        } else {
-            toggle.style.left = "-100%"
-        }
-    }
 
-    console.log(toggle)
+    
+    function toggleButton() {
+        const toggle = document.getElementById("nav--items");
+        if (toggle.style.display === "none") {
+            toggle.style.display = "block"
+        } else {
+            toggle.style.display = "none"
+        }
+        console.log(toggle)
+    }
+   
 
     return (
         <nav  className="nav section">

@@ -10,7 +10,7 @@ export default function Response() {
 
     const clientResponse = client.map(response =>{
         return <About 
-            id = {response.id}
+            key = {response.id}
             Image = {response.clientImage}
             Name = {response.clientName}
             Role = {response.clientRole}
