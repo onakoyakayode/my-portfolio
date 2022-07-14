@@ -872,7 +872,7 @@ section {
 .my-experience-roles {
     position: relative;
     background-color: #fff;
-    padding: 25px;
+    padding: 20px;
     border-radius: 5px;
     margin-block-end: 20px;
 }
@@ -909,7 +909,7 @@ section {
         height: 2px;
         position: absolute;
         left: 0%;
-        top: 40.2%;
+        top: 38.2%;
     }
 }
 
@@ -941,7 +941,7 @@ section {
 
 @media only screen and (max-width: 600px) {
     .my-experience-heading {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -951,7 +951,7 @@ section {
 
 @media only screen and (max-width: 600px) {
     .my-experience-date {
-        font-size: .95rem;
+        font-size: .85rem;
     }
 }
 
@@ -994,7 +994,7 @@ section {
 
 @media only screen and (max-width: 600px) {
     .about-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
 
