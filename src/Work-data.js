@@ -1,4 +1,4 @@
-export default work =  {
+export default {
     "success": true,
     "work" : [
         {
