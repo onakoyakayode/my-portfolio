@@ -19,7 +19,7 @@ export default function Portfolio() {
     
 
     return (
-        <div>
+        <div id='portfolio'>
             <h1 className='portfolio-title'>Portfolio</h1>
             <section className="portfolio">
                 {work}

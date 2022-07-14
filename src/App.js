@@ -1,4 +1,5 @@
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Portfolio from "./components/Portofolio";

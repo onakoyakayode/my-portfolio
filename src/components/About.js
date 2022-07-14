@@ -7,7 +7,7 @@ import linkedin from "../icons/linkedins.svg"
 export default function About(props) {
 
      return (
-        <div className='section about'>
+        <div className='section about' id="about">
             <h2 className='about-title'>What my clients has to say about me</h2>
             <div className='about-client'>
                 <img src={props.Image} className="client 1" alt="client" />

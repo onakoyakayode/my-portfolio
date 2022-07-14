@@ -7,7 +7,7 @@ import linkedin from "../icons/linkedins.svg"
 
 export default function Footer() {
     return (
-        <footer className="footer section">
+        <footer className="footer section" id="contact">
             <div className="social-icons">
                 <img src={github} className="social-icon-github" alt="github"/>
                 <img src={discord} className="social-icon-discord" alt="discord"/>

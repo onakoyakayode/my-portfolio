@@ -30,8 +30,58 @@ section {
     align-items: center;
     height: 80px;
     background-color: transparent;
-    color: white;
     position: relative;
+}
+
+#navbar{
+    background: transparent;
+    display: flex;
+}
+
+
+.navbar>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-items {
+    margin-inline-start: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-items {
+        width: 100%;
+        margin-inline-start: 0;
+        background-color: rgb(0, 0, 0);
+        height: 90vh;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        padding-block: 70px 30px;
+        transition: 0.4s all ease-in-out;
+    }
+}
+
+#nav-items > * {
+    padding-inline: 20px;
+    font-size: 1.3rem;
+    margin-inline: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-items > * {
+        padding-inline: 0px;
+        font-size: 1.2rem;
+        margin-block: 25px;
+    }
+}
+
+.navbar-dark .navbar-toggler {
+    color: hsl(345deg 100% 47%);
+    border-color: hsl(345deg 100% 47%);
+    z-index: 99;
 }
 
 @media only screen and (max-width: 600px) {
@@ -801,7 +851,7 @@ section {
     background-color: #fff;
     border-radius: 50px;
     position: absolute;
-    bottom: 10px;
+    bottom: -60px;
     left: 18%;
 }
 
@@ -896,10 +946,10 @@ section {
 .vertical-line {
     background-color: #fff;
     width: 2px;
-    height: 557px;
+    height: 553px;
     position: absolute;
     left: 48.7%;
-    top: 15.2%;
+    top: 15.3%;
 }
 
 @media only screen and (max-width: 600px) {
