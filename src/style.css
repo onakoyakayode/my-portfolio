@@ -168,7 +168,7 @@ section {
 @media only screen and (max-width: 600px) {
     .header-container {
         text-align: center;
-        margin: 15% auto;
+        margin: 20% auto;
     }
 }
 
@@ -630,7 +630,7 @@ section {
         align-items: center;
         gap: 30px;
         margin: 0px 0px;
-        padding: 50px;
+        padding: 50px 20px;
         height: auto;
     }
 }
@@ -684,7 +684,7 @@ section {
     .project .port {
         font-size: 1.3rem;
         line-height: 2rem;   
-        margin: 0 0 3% 0;
+        margin-bottom: 5px;
         color: hsl(345deg 100% 47%);
         z-index: 1;
     }
@@ -701,9 +701,9 @@ section {
 
 @media only screen and (max-width: 600px) {
     .project .latest-project {
-        height: 10px;
+        height: 0px;
         font-size: 1.7rem;
-        margin: 0 0 0 0;
+        margin-bottom: 0px;
     } 
 }
 
