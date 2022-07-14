@@ -11,6 +11,8 @@ export default function Navbar() {
         }
     }
 
+    console.log(toggle)
+
     return (
         <nav  className="nav section">
             <h1 className="nav-title">April<span className="nav-26">26</span></h1>

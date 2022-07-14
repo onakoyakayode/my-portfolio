@@ -106,17 +106,17 @@ section {
     }
 }
 
-.nav-items {
+#nav--items {
     margin-inline: auto;
     display: flex;
 }
 
 @media only screen and (max-width: 600px) {
-    .nav-items {
+    #nav--items {
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        z-index: 111;
+        z-index: 100;
         top: 0;
         left: -100%;
         background-color: hsl(345deg 100% 47%);
@@ -127,7 +127,7 @@ section {
     }
 }
 
-.nav-items > li {
+#nav--items > li {
     list-style: none;
     padding: 25px;
     font-size: 1rem;
@@ -136,7 +136,7 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-    .nav-items > li {
+    #nav--items > li {
         padding: 35px 25px;
         font-size: 1rem;
         cursor: pointer;
@@ -168,7 +168,7 @@ section {
 @media only screen and (max-width: 600px) {
     .header-container {
         text-align: center;
-        margin: 14% auto;
+        margin: 15% auto;
     }
 }
 
@@ -216,8 +216,8 @@ section {
 
 @media only screen and (max-width: 600px) {
     .header-title-name {
-        font-size: 3rem;
-        line-height: 5rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
     }
 }
 
@@ -234,7 +234,7 @@ section {
 @media only screen and (max-width: 600px) {
     .header-description {
        line-height: 3rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -1034,6 +1034,8 @@ section {
 @media only screen and (max-width: 600px) {
     .client-response {
         height: auto;
+        padding: 30px 20px;
+        width: 100%;
     }
 }
 
@@ -1041,6 +1043,14 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .client-details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .client-info {
@@ -1051,7 +1061,7 @@ section {
 
 @media only screen and (max-width: 600px) {
     .client-info {
-        gap: 13px;
+        gap: 5px;
     }
 }
 
@@ -1139,6 +1149,7 @@ section {
 @media only screen and (max-width: 600px) {
     .twitter {
         transform: scale(1);
+        margin-right: 5px;
     }
 }
 
@@ -1214,7 +1225,8 @@ section {
 
 @media only screen and (max-width: 600px) {
     .email {
-        font-size: 1.6rem;
+        text-align: center;
+        font-size: 1.3rem;
     }
 }
 
@@ -1340,7 +1352,7 @@ section {
 
 @media only screen and (max-width: 600px) {
     .footer-items > li {
-        padding: 15px;
+        padding: 5px;
         font-size: 0.9rem;
     }
     
