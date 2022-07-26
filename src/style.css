@@ -31,6 +31,7 @@ section {
     height: 80px;
     background-color: transparent;
     position: relative;
+    padding: 20px 0;
 }
 
 #navbar{
@@ -43,6 +44,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
 }
 
 #nav-items {
@@ -54,12 +56,11 @@ section {
         width: 100%;
         margin-inline-start: 0;
         background-color: rgb(0, 0, 0);
-        height: 90vh;
-        position: absolute;
-        z-index: 10;
+        height: 70vh;
+        position: relative;
         top: 0;
         left: 0;
-        padding-block: 70px 30px;
+        padding-block: 0px 30px;
         transition: 0.4s all ease-in-out;
     }
 }
@@ -74,13 +75,13 @@ section {
     #nav-items > * {
         padding-inline: 0px;
         font-size: 1.2rem;
-        margin-block: 25px;
+        margin-block: 20px;
     }
 }
 
 .navbar-dark .navbar-toggler {
     color: hsl(345deg 100% 47%);
-    border-color: hsl(345deg 100% 47%);
+    border-color: transparent;
     z-index: 99;
 }
 
@@ -106,7 +107,7 @@ section {
 @media only screen and (max-width: 600px)  {
     .nav--toggleButton {
         right: 1.2rem;
-        top: 1.5rem;
+        top: .8rem;
         display: block;
         width: 40px;
         height: 40px;
@@ -133,6 +134,8 @@ section {
     .nav-title {
         font-size: 1.6em;
         font-weight: 600;
+        position: relative;
+        top: 0.3rem;
     }
 }
 
@@ -162,7 +165,7 @@ section {
     margin-inline: auto;
     display: flex;
 }
-
+/* 
 @media only screen and (max-width: 600px) {
     #nav--items {
         flex-direction: column;
@@ -177,17 +180,17 @@ section {
         padding-top: 10%;
         transition: 0.5s all ease-in-out;
     }
-}
+} */
 
-#nav--items > li {
+/* #nav--items > li {
     list-style: none;
     padding: 25px;
     font-size: 1rem;
     cursor: pointer;
     text-transform: uppercase;
-}
+} */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #nav--items > li {
         padding: 35px 25px;
         font-size: 1rem;
@@ -196,7 +199,7 @@ section {
         margin-inline: auto;
     }
     
-}
+} */
 
 
 .header {
@@ -427,6 +430,18 @@ section {
     padding: 70px 100px;
 }
 
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 @media only screen and (max-width: 600px) {
     .portfolio {
         gap: 10px;
@@ -510,6 +525,7 @@ section {
     margin-top: 20px;
     color: hsl(345deg 100% 47%);
     cursor: pointer;
+    font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -845,14 +861,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 2rem;
     height: 65px;
-    width: 70%;
+    width: 75%;
     background-color: #fff;
     border-radius: 50px;
     position: absolute;
     bottom: -60px;
-    left: 18%;
+    left: 13%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -871,10 +887,17 @@ section {
     background-color: hsl(345deg 100% 47%);
     border: none;
     color: #fff;
-    font-size: .8rem;
+    font-size: .9rem;
     cursor: pointer;
     box-shadow: 0px 3px 5px rgba(240, 0, 60, 0.5);
     font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.hire-me-button:hover {
+    color: hsl(345deg 100% 47%);
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(68, 67, 67, 0.5)
 }
 
 @media only screen and (max-width: 600px) {
@@ -889,9 +912,16 @@ section {
     background-color: transparent;
     border: 1px solid hsl(345deg 100% 47%);
     color: hsl(345deg 100% 47%);
-    font-size: .8rem;
+    font-size: .9rem;
     cursor: pointer;
     font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.donwload-me-button:hover {
+    background-color: hsl(345deg 100% 47%);
+    color: #fff;
+    box-shadow: 0px 3px 5px rgba(240, 0, 60, 0.5);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1386,6 +1416,7 @@ section {
 
 .footer-items {
     display: flex;
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1394,16 +1425,21 @@ section {
     }
 }
 
-.footer-items > li {
+.footer-items > * {
     list-style: none;
     padding: 25px;
     font-size: 1rem;
     cursor: pointer;
     text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-items > *:hover {
+    color: hsl(345deg 100% 47%);
 }
 
 @media only screen and (max-width: 600px) {
-    .footer-items > li {
+    .footer-items > * {
         padding: 5px;
         font-size: 0.9rem;
     }

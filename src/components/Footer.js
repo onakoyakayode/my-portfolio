@@ -4,6 +4,7 @@ import github from "../icons/github.svg"
 import discord from "../icons/discord.svg"
 import twitter from "../icons/twitter.svg"
 import linkedin from "../icons/linkedins.svg"
+import Nav from 'react-bootstrap/Nav';
 
 export default function Footer() {
     return (
@@ -16,11 +17,11 @@ export default function Footer() {
                 
             </div>
             <ul className="footer-items">
-                <li className="footer--list">Home</li>
-                <li>Portfolio</li>
-                <li>Resume</li>
-                <li>About</li>
-                <li>Contact</li>
+                <Nav.Link href="#home" className="footer--list">Home</Nav.Link>
+                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                <Nav.Link href="#resume">Resume</Nav.Link>
+                <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
             </ul>
             <div>
                 <img src={whatsapp} className="social-icon-whatsapp" alt="whatsapp"/>

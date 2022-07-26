@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
 
+
 export default function Header() {
+
+
     return (
-        <header className="header" id="home">
+        <header className="header" >
             <Navbar />
-            <div className="header-container">
+            <div className="header-container" id="home">
                 <h1 className="header-title">Hello, I'm <span className="header-title-name">Onakoya Kayode</span></h1>
                 <p className="header-description">Frontend Developer</p>
                 <button className="button-82-pushable">
