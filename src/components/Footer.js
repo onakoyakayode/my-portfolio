@@ -7,13 +7,35 @@ import linkedin from "../icons/linkedins.svg"
 import Nav from 'react-bootstrap/Nav';
 
 export default function Footer() {
+
+
+    function githubClick() {
+        return window.open('https://github.com/onakoyakayode')
+    }
+
+    function twitterClick() {
+        return window.open('https://twitter.com/kayodeonakoya26')
+    }
+
+    function linkedinClick() {
+        return window.open('https://www.linkedin.com/in/onakoya-oluwakayode-a525b619a/')
+    }
+
+    function discordClick() {
+        return window.open('https://support.discord.com/hc/en-us/profiles/7722204556183')
+    }
+
+    function whatsappClick() {
+        return window.open('https://wa.me/message/HFG2OHGUQ3HNE1')
+    }
+
     return (
         <footer className="footer section" id="contact">
             <div className="social-icons">
-                <img src={github} className="social-icon-github" alt="github"/>
-                <img src={discord} className="social-icon-discord" alt="discord"/>
-                <img src={twitter} className="social-icon-twitter" alt="twitter"/>
-                <img src={linkedin} className="social-icon-linkedin" alt="linkedin"/>
+                <img src={github} onClick={githubClick} className="social-icon-github" alt="github"/>
+                <img src={discord} onClick={discordClick} className="social-icon-discord" alt="discord"/>
+                <img src={twitter} onClick={twitterClick} className="social-icon-twitter" alt="twitter"/>
+                <img src={linkedin} onClick={linkedinClick} className="social-icon-linkedlinkedin" alt="linkedin"/>
                 
             </div>
             <ul className="footer-items">
@@ -24,7 +46,7 @@ export default function Footer() {
                 <Nav.Link href="#contact">Contact</Nav.Link>
             </ul>
             <div>
-                <img src={whatsapp} className="social-icon-whatsapp" alt="whatsapp"/>
+                <img src={whatsapp} onClick={whatsappClick} className="social-icon-whatsapp" alt="whatsapp"/>
             </div>
         </footer>
     )
