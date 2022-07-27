@@ -7,13 +7,15 @@ export default function Showcase() {
             <div className="project">
                 <h4 className="port">Portfolios</h4>
                 <h2 className="latest-project">Latest Projects</h2>
-                <button className="button-82-pushable">
-                <span className="button-82-shadow"></span>
-                <span className="button-82-edge"></span>
-                <span className="button-82-front text">
-                    View Portfolio
-                </span>
-                </button>
+                <a href="#portfolio">
+                    <button className="button-82-pushable">
+                    <span className="button-82-shadow"></span>
+                    <span className="button-82-edge"></span>
+                    <span className="button-82-front text">
+                        View Portfolio
+                    </span>
+                    </button>
+                </a>
             </div>
             <div className="make-img">
                 <img src={latestProject} className="latest-project-image" alt="Project" />

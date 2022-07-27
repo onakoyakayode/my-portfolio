@@ -1,5 +1,7 @@
 import React from "react";
 import profileImage from "../images/suitGuy.png"
+import CV from "../file/OnakoyaCv.pdf"
+
 
 export default function Experience() {
     return (
@@ -11,8 +13,12 @@ export default function Experience() {
                 <div className="hire-profile">
                     <img src={profileImage} className="profile-image" alt="profile"/>
                     <div className="hire-me">
-                        <button className="hire-me-button">Hire Me</button>
-                        <button className="donwload-me-button">Download CV</button>
+                        <a href="mailto:onakoyakayode@gmail.com" target="_blank">
+                            <button className="hire-me-button">Hire Me</button>
+                        </a>
+                        <a href={CV} target="_blank" rel="noopener norefferer" donwload>
+                            <button className="donwload-me-button">Download CV</button>
+                        </a>
                     </div>
                 </div>
                 <div className="vertical-line"></div>

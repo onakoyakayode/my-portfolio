@@ -2,6 +2,7 @@ import React from "react"
 
 export default function Work(props) {
 
+    
     let workProgress
     if (props.openSlot === 0) {
         workProgress = "in-progress"
