@@ -32,10 +32,10 @@ export default function Footer() {
     return (
         <footer className="footer section" id="contact">
             <div className="social-icons">
-                <img src={github} onClick={githubClick} className="social-icon-github" alt="github"/>
-                <img src={discord} onClick={discordClick} className="social-icon-discord" alt="discord"/>
-                <img src={twitter} onClick={twitterClick} className="social-icon-twitter" alt="twitter"/>
-                <img src={linkedin} onClick={linkedinClick} className="social-icon-linkedlinkedin" alt="linkedin"/>
+                <img src={github} onClick={githubClick} rel="noreferrer" className="social-icon-github" alt="github"/>
+                <img src={discord} onClick={discordClick} rel="noreferrer" className="social-icon-discord" alt="discord"/>
+                <img src={twitter} onClick={twitterClick} rel="noreferrer" className="social-icon-twitter" alt="twitter"/>
+                <img src={linkedin} onClick={linkedinClick} rel="noreferrer" className="social-icon-linkedlinkedin" alt="linkedin"/>
                 
             </div>
             <ul className="footer-items">
@@ -46,7 +46,7 @@ export default function Footer() {
                 <Nav.Link href="#contact">Contact</Nav.Link>
             </ul>
             <div>
-                <img src={whatsapp} onClick={whatsappClick} className="social-icon-whatsapp" alt="whatsapp"/>
+                <img src={whatsapp} onClick={whatsappClick} rel="noreferrer" className="social-icon-whatsapp" alt="whatsapp"/>
             </div>
         </footer>
     )
